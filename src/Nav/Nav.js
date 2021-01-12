@@ -5,13 +5,13 @@ function Nav() {
   return(
     <section className="nav">
     <Link to="/about" className="about-us">
-      <h2>About Us</h2>
+      <button>About Us</button>
     </Link>
     <Link to="/" className="home">
-      <h2>Home</h2>
+      <button>Home</button>
     </Link>
     <Link to="/locations" className="find-us">
-      <h2>Find Us</h2>
+      <button>Find Us</button>
     </Link>
     </section>
   )
