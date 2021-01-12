@@ -1,0 +1,22 @@
+.taco {
+  background-image: url('../assets/taco-of-the-day.png');
+  width: 700px;
+  height: 400px;
+  
+}
+
+.homepage-view {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.taco-name {
+  color: white;
+  text-align: center;
+}
+
+.recipe-button {
+  margin: 30px;
+}
