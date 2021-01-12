@@ -14,7 +14,7 @@ function App() {
         <Route path="/recipe" component={}/>
         <Route exact path="/" component={}/> */}
         <Route render={() => 
-        <h1>Page does not exist</h1>}/>
+          <h1>Page does not exist</h1>}/>
         </Switch>
       </main>
     </main>
