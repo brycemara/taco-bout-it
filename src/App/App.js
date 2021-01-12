@@ -9,10 +9,10 @@ function App() {
     <Nav />
       <main>
         <Switch>
-        {/* <Route path="/about" component={}/>
+        <Route path="/about" component={}/>
         <Route path="/locations" component={}/>
         <Route path="/recipe" component={}/>
-        <Route exact path="/" component={}/> */}
+        <Route exact path="/" component={}/>
         <Route render={() => 
           <h1>Page does not exist</h1>}/>
         </Switch>
