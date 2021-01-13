@@ -1,0 +1,17 @@
+.about-us {
+  text-align: center;
+}
+
+.about-paragraph {
+  margin: 50px;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.find-us {
+  text-align: center;
+}

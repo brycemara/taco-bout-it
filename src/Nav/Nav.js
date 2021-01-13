@@ -10,8 +10,8 @@ function Nav() {
     <Link to="/" className="home">
       <button>Home</button>
     </Link>
-    <Link to="/locations" className="find-us">
-      <button>Find Us</button>
+    <Link to="/reviews" className="find-us">
+      <button>Reviews</button>
     </Link>
     </section>
   )
