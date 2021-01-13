@@ -27,7 +27,7 @@ function About() {
         </div>
       </section>
       <section className="find-us">
-        <h1>Find Us!</h1>
+        <h1>Come Visit Us!</h1>
         <div className="schedule">
           <div>South Congress, Austin TX M-W 10am-2pm</div>
           <div>Zilker Park (South), Austin TX Th-F 10am-2pm</div>
