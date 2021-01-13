@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import Recipe from "../Recipe/Recipe";
 import About from "../About/About";
+import Reviews from "../Reviews/Reviews"
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <main>
         <Switch>
           <Route path="/about" component={About} />
-          {/* <Route path="/locations" component={}/> */}
+          <Route path="/reviews" component={Reviews}/>
           <Route path="/recipe" component={Recipe} />
           <Route exact path="/" component={HomePage} />
           <Route render={() => <h1>Page does not exist</h1>} />
