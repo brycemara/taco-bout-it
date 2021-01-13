@@ -5,7 +5,7 @@ function HomePage() {
   return(
     <section className="homepage-view">
       <div className="taco">
-        <h1 className="taco-name">Taco Name</h1>
+        <h1 className="taco-name">Random Taco Of The Day!</h1>
       </div>
       <p>Wanna taco bout it?</p>
       <p>Favorite the taco if you want to see it again!</p>
