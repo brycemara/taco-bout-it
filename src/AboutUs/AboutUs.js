@@ -10,13 +10,18 @@ function AboutUs() {
       />
       <div className="about-paragraph">
         <p>
-          El Xolo Tacos is interested in showcasing old Mexican culture through
+          Rando-Taco is interested in showcasing old Mexican culture through
           traditional flavors, adding even more diversity to Austin, TX’s
-          multicultural culinary scene. Their name and logo are a nod to
-          Xoloitzcuintle, a Mexican dog breed that led people into the underworld
-          according to Aztec mythology. It’s not just the name, however, that
-          provides insight on Mexican culture. It’s the food, this truck serving
-          up countless dishes packed with rich, authentic flavor.
+          multicultural culinary scene. This truck serves up countless dishes
+          packed with rich, authentic flavor each day with a new random recipe.
+          The idea came to our owner when she realized she could never choose
+          what she wanted to eat off the menu. She started telling the waiters
+          to pick something random and serve it to her. This worked out better
+          than she expected and she started enjoying her meals more without the
+          pressure of picking something out on the menu. It also came with a fun
+          element of surprise. She also knew Austin locals would express
+          interest and engage in her idea, after all, Austin is weird. Thats
+          when the Rando-Taco idea started.
         </p>
       </div>
     </section>
