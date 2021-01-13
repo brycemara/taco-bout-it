@@ -1,13 +1,12 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import AboutUs from "./AboutUs";
+import About from "./About";
 
-describe("About Us", () => {
-  
+describe("About", () => {
   it("should render correctly", () => {
     render(
       <MemoryRouter>
-        <AboutUs />
+        <About />
       </MemoryRouter>
     );
     const title = screen.getByText("About Us");
@@ -18,11 +17,11 @@ describe("About Us", () => {
   it("should render the taco truck image", () => {
     render(
       <MemoryRouter>
-        <AboutUs />
+        <About />
       </MemoryRouter>
     );
-    const image = screen.getByAltText("taco truck")
+    const image = screen.getByAltText("taco truck");
 
-    expect(image).toBeInTheDocument()
-  })
+    expect(image).toBeInTheDocument();
+  });
 });
