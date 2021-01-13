@@ -1,0 +1,9 @@
+.recipe {
+  text-align: center;
+}
+
+h2 {
+  border: 2px solid blue;
+  padding: 5px;
+  color: aqua;
+}
