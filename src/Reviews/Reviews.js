@@ -55,7 +55,7 @@ function Reviews() {
       <section className="reviews-container">
         { reviewCards }
       </section>
-      <ReviewForm setReview={setReview}/>
+      <ReviewForm reviews={reviews} setReview={setReview}/>
     </section>
   )
 }
