@@ -19,6 +19,8 @@ const handleSubmit = (event) => {
 
   clearInputs()
 }
+
+
 const clearInputs = () => {
   setName('')
   setDescription('')
