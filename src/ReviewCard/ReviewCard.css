@@ -5,7 +5,9 @@
   text-align: center;
 }
 
-img {
-  height: 150px;
-  width: 150px
+.review-img {
+  cursor: pointer;
+  top: 0px;
+  height: 175px;
+  width: 250px;
 }

@@ -4,7 +4,7 @@ import "./ReviewCard.css"
 const ReviewCard = ({id, key, name, review, image}) => {
   return(
     <section className="card">
-        <img src={image} alt="No Image Submitted"/>
+        <img className="review-img" src={image} alt="No Image Submitted"/>
         <p>{review}</p>
         <p>From: {name}</p>
     </section>

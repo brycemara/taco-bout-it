@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "./Reviews.css";
 import ReviewCard from '../ReviewCard/ReviewCard'
+import shawnTaco from '../assets/shawn-taco.jpg'
+import letaTaco from '../assets/leta-taco.jpg'
+import willTaco from '../assets/will-taco.jpg'
 
 function Reviews() {
   const [reviews, setReview] = useState([
@@ -8,19 +11,19 @@ function Reviews() {
       id: 1,
       name: "Will Mitchell",
       review: "Tacos are absolutely to die for!",
-      image: "https://www.breachbangclear.com/wp-content/uploads/2016/04/tacos-1024x694.jpg",
+      image: willTaco
     },
     {
       id: 2,
       name: "Leta Keane",
       review: "Tacos are amazeballs. Staff is super friendly too.",
-      image: "https://farm4.staticflickr.com/3273/3033645312_9786714722.jpg"
+      image: letaTaco
     },
     {
       id: 3,
       name: "Shawn Truesdale",
       review: "Wow.",
-      image: "",
+      image: shawnTaco,
     },
   ]);
 
