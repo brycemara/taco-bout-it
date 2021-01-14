@@ -19,7 +19,7 @@ describe("ReviewForm", () => {
     })
 
     it.skip("should be able to fill out form", async () => {
-      const mockHandleSubmit = jest.mock()
+      const mockHandleSubmit = jest.fn()
       render(
         <MemoryRouter>
           <ReviewForm />
@@ -34,6 +34,7 @@ describe("ReviewForm", () => {
       userEvent.type(descriptionInput, "So good!!")
       userEvent.click(addReviewButton)
 
-      expect(mockHandleSubmit).toHaveBeenCalled()
+      // need to expect something to happen with the form is submitted, unsure what yet
+      // what if a success! review submitted! little tag/alert comes up. then we could test that that happens.
     })
 })

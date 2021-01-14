@@ -7,6 +7,8 @@ const ReviewForm = ({ reviews, setReview }) => {
   const [image, setImage] = useState("");
 
   const handleSubmit = (event) => {
+    if (name === '' || description === '') return;
+    
     event.preventDefault();
 
     const newReview = {
@@ -36,6 +38,7 @@ const ReviewForm = ({ reviews, setReview }) => {
         placeholder="Name"
         value={name}
         onChange={(event) => setName(event.target.value)}
+        required
       />
 
       <label htmlFor="description">Description: </label>
@@ -45,6 +48,7 @@ const ReviewForm = ({ reviews, setReview }) => {
         placeholder="Description"
         value={description}
         onChange={(event) => setDescription(event.target.value)}
+        required
       />
 
       <label htmlFor="image">Image: </label>
@@ -54,6 +58,7 @@ const ReviewForm = ({ reviews, setReview }) => {
         placeholder="Image (optional)"
         value={image}
         onChange={(event) => setImage(event.target.value)}
+
       />
 
       <button onClick={handleSubmit}>Add Review</button>
