@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Reviews.css";
 import ReviewCard from '../ReviewCard/ReviewCard'
+import ReviewForm from '../ReviewForm/ReviewForm'
 import shawnTaco from '../assets/shawn-taco.jpg'
 import letaTaco from '../assets/leta-taco.jpg'
 import willTaco from '../assets/will-taco.jpg'
@@ -39,12 +40,22 @@ function Reviews() {
     )
 })
 
+  const reviewFormDisplay = () => {
+    console.log("you are here")
+    return(
+      <form>
+        <h1>Hello</h1>
+      </form>
+    )
+  }
+
   return(
     <section>
       <h1>Reviews</h1>
       <section className="reviews-container">
         { reviewCards }
       </section>
+      <ReviewForm setReview={setReview}/>
     </section>
   )
 }
