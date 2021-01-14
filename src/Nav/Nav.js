@@ -10,7 +10,7 @@ function Nav() {
     <Link to="/" className="home">
       <button>Home</button>
     </Link>
-    <Link to="/reviews" className="find-us">
+    <Link to="/reviews" className="reviews">
       <button>Reviews</button>
     </Link>
     </section>
