@@ -1,10 +1,26 @@
+.main {
+  background: radial-gradient(
+    circle, rgb(4 212 246 / 25%) 0%, rgb(9 148 180) 96% );
+}
+
 h1 {
+  margin: 0px;
+  padding: 20px;
   text-align: center;
 }
 
 .reviews-container {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.form-container {
+  padding: 50px;
+}
+
+.review-title {
+  text-align: center;
 }

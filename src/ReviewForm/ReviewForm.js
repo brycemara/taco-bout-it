@@ -1,31 +1,31 @@
 import { useState } from "react";
+import "./ReviewForm.css";
 
 const ReviewForm = ({ reviews, setReview }) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
 
-const handleSubmit = (event) => {
-  event.preventDefault()
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-  const newReview = {
-    id: Date.now(),
-    name: name,
-    review: description,
-    image: image
-  }
+    const newReview = {
+      id: Date.now(),
+      name: name,
+      review: description,
+      image: image,
+    };
 
-  setReview([...reviews, newReview])
+    setReview([...reviews, newReview]);
 
-  clearInputs()
-}
+    clearInputs();
+  };
 
-
-const clearInputs = () => {
-  setName('')
-  setDescription('')
-  setImage('')
-}
+  const clearInputs = () => {
+    setName("");
+    setDescription("");
+    setImage("");
+  };
 
   return (
     <form className="form">
@@ -56,7 +56,7 @@ const clearInputs = () => {
         onChange={(event) => setImage(event.target.value)}
       />
 
-      <button onClick={handleSubmit}>Submit</button>
+      <button onClick={handleSubmit}>Add Review</button>
     </form>
   );
 };

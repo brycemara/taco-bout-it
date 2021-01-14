@@ -40,22 +40,16 @@ function Reviews() {
     )
 })
 
-  const reviewFormDisplay = () => {
-    console.log("you are here")
-    return(
-      <form>
-        <h1>Hello</h1>
-      </form>
-    )
-  }
-
   return(
-    <section>
+    <section className="main">
       <h1>Reviews</h1>
       <section className="reviews-container">
         { reviewCards }
       </section>
-      <ReviewForm reviews={reviews} setReview={setReview}/>
+      <section className="form-container">
+        <h2 className="review-title">Taco bout your experience!</h2>
+        <ReviewForm reviews={reviews} setReview={setReview}/>
+      </section>
     </section>
   )
 }
