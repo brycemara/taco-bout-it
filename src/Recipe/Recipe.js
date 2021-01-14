@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Recipe.css";
-import { fetchTaco } from '../APIcalls'
+import { fetchTaco } from '../APIcalls/APIcalls'
 
 function Recipe() {
   const [seasoning, setSeasoning] = useState(null);
