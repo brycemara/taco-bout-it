@@ -1,5 +1,6 @@
-import { render, screen } from '@testing-library/react';
-import { Router, MemoryRouter } from 'react-router-dom'
+import { render, screen, waitFor } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom'
+import userEvent from '@testing-library/user-event'
 import ReviewForm from './ReviewForm';
 
 describe("ReviewForm", () => {
@@ -17,21 +18,22 @@ describe("ReviewForm", () => {
       expect(imageInput).toBeInTheDocument()
     })
 
-    it("should be able to fill out form", () => {
-
-    })
-
-    it('should be able to submit a new reservation', () => {
-      const mockHandleSubmit = jest.fn()
+    it.skip("should be able to fill out form", async () => {
+      const mockHandleSubmit = jest.mock()
       render(
         <MemoryRouter>
           <ReviewForm />
         </MemoryRouter>
       )
-  
-      fireEvent.click(screen.getByText("Add Review"))
-  
-      expect(mockHandleSubmit).toBeCalled()
-    })
+      const nameInput = screen.getByPlaceholderText("Name")
+      const descriptionInput = screen.getByPlaceholderText("Description")
+      const addReviewButton = screen.getByText("Add Review")
 
+
+      userEvent.type(nameInput, "Bob")
+      userEvent.type(descriptionInput, "So good!!")
+      userEvent.click(addReviewButton)
+
+      expect(mockHandleSubmit).toHaveBeenCalled()
+    })
 })
