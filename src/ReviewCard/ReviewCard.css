@@ -1,8 +1,9 @@
 .card {
   box-sizing: border-box;
-  border: 3px solid black;
+  border: 3px solid white;
   padding: 10px;
   text-align: center;
+  background-color: rgb(255 255 255 / 64%);
 }
 
 .review-img {
