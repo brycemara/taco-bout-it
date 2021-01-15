@@ -7,14 +7,18 @@
 }
 
 button {
-    display: block;
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    border: 1px solid blue;
-    text-decoration: none;
+  display: block;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
 }
 
-.about-us .home .find-us {
+.about-us  {
+  text-decoration: none;
+}
+ .reviews {
+  text-decoration: none;
+}
+.home {
   text-decoration: none;
 }
