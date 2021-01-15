@@ -42,7 +42,7 @@ function Reviews() {
 
   return(
     <section className="main">
-      <h1>Reviews</h1>
+      <h1>Customer Reviews</h1>
       <section className="reviews-container">
         { reviewCards }
       </section>
