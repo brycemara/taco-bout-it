@@ -1,9 +1,53 @@
 .recipe {
-  text-align: center;
+  background-color: #cafafe;
 }
 
-/* h2 {
-  border: 2px solid blue;
-  padding: 5px;
-  color: aqua;
-} */
+.title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #0c578e;
+  background-color: #ffffff87;
+}
+
+.landing-img {
+  height: auto;
+  width: 100%;
+}
+
+.recipe-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+h2,
+a {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.seasoning,
+.baseLayer,
+.condiment {
+  background-color: #fc4445;
+  margin: 40px;
+  height: auto;
+  width: 400px;
+  padding: 15px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.shell,
+.mixin {
+  background-color: #a64ac9;
+  margin: 40px;
+  height: auto;
+  width: 400px;
+  padding: 15px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, 0.2);
+}
