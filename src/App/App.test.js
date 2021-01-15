@@ -146,7 +146,7 @@ describe("View Recipe interaction", () => {
     userEvent.click(viewRecipeButton);
 
     const recipeView = await waitFor(() =>
-      screen.getByText("Random Taco Recipe")
+      screen.getByText("RANDOM TACO RECIPE")
     );
     const seasoning = await waitFor(() =>
       screen.getByText("Seasoning: Sriracha Marinade")

@@ -2,10 +2,17 @@
   background-image: url('../assets/taco-of-the-day.png');
   width: 700px;
   height: 400px;
-  
+}
+
+.favorite {
+  cursor: pointer;
+  z-index: 1;
+  margin: 5px;
+  background-color: #ffffffa3;
 }
 
 .homepage-view {
+  background-color: #3feee6;
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -18,5 +25,8 @@
 }
 
 .recipe-button {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #fc4445;
   margin: 30px;
 }
