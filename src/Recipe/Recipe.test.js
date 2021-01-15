@@ -33,7 +33,7 @@ describe("Recipe", () => {
         <Recipe />
       </MemoryRouter>
     )
-    const title = screen.getByText("Random Taco Recipe");
+    const title = screen.getByText("RANDOM TACO RECIPE");
 
     expect(title).toBeInTheDocument()
   })

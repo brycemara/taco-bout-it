@@ -5,7 +5,7 @@ function Nav() {
   return(
     <section className="nav">
     <Link to="/about" className="about-us">
-      <button>About Us</button>
+      <button>About</button>
     </Link>
     <Link to="/" className="home">
       <button>Home</button>
