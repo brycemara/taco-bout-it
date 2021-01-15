@@ -14,7 +14,7 @@ function HomePage() {
     <section className="homepage-view">
       <h1 className="taco-name">Random Taco of the Day!</h1>
       <div className="taco">
-        <img className="favorite" src={favorite} onClick={changeFavorite} />
+        <img className="favorite" src={favorite} alt="fav-img" onClick={changeFavorite} />
       </div>
       {favorite === fav && (
         <p>Thanks for favoriting our taco!</p>
