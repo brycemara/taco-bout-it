@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useState } from "react";
 import notFav from '../assets/not-favorited.png'
 import fav from '../assets/favorited.png'
+import austin from '../assets/austin.png'
 
 function HomePage() {
   const [favorite, setFavorite] = useState(notFav)
@@ -12,19 +13,20 @@ function HomePage() {
   }
   return(
     <section className="homepage-view">
-      <h1 className="taco-name">Random Taco of the Day!</h1>
+      <img className="landing" src={austin} alt="Ingredients Image"/>
+      <h1 className="welcome">TACQUERO MUCHO</h1>
+      <h2 className="taco-name">Check out our taco of the day!</h2>
       <div className="taco">
         <img className="favorite" src={favorite} alt="fav-img" onClick={changeFavorite} />
       </div>
       {favorite === fav && (
-        <p>Thanks for favoriting our taco!</p>
+        <p className="fav-info">Thanks for favoriting our taco!</p>
       )}
       {favorite !== fav && (
-        <p>Favorite the taco if you want to see it again!</p>
+        <p className="fav-info">Favorite the taco if you want to see it again!</p>
       )}
-      <p>Wanna taco bout it?</p>
-      <Link to="/recipe" >
-        <button className="recipe-button">View Recipe</button>
+      <Link to="/recipe" className="remove-link">
+        <button className="recipe-button">RECIPE</button>
       </Link>
     </section>
   )
