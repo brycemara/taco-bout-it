@@ -25,7 +25,7 @@ function Recipe() {
   return (
     <section className="recipe">
       <img className="landing-img" src={cook} alt="Ingredients Image"/>
-      <h1 className="title">RANDOM TACO RECIPE</h1>
+      <h1 className="title">TACO OF THE DAY</h1>
       {seasoning === null && <h2>...Loading...</h2>}
       {condiment !== null && (
         <section className="recipe-details">
