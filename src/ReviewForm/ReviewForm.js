@@ -61,7 +61,7 @@ const ReviewForm = ({ reviews, setReview }) => {
 
       />
 
-      <button onClick={handleSubmit}>Add Review</button>
+      <button className="review-button" onClick={handleSubmit}>Add Review</button>
     </form>
   );
 };

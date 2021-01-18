@@ -34,6 +34,7 @@
   cursor: pointer;
   z-index: 1;
   margin: 5px;
+  box-shadow: 0px 0px 10px #fff;
   background-color: #ffffffa3;
 }
 

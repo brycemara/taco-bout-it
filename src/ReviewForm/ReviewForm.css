@@ -7,6 +7,21 @@ input {
   box-sizing: border-box;
 }
 
+.review-button {
+  margin: 20px;
+  height: 80px;
+  width: 90px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: #f4de80;
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, 0.2)
+}
+
+.review-button:hover {
+  cursor: pointer;
+  background-color: #f7ce17;
+}
+
 .form {
   display: flex;
   flex-direction: column;

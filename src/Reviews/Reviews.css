@@ -1,15 +1,18 @@
 .main {
-  background: radial-gradient(
-    circle, rgb(4 212 246 / 25%) 0%, rgb(9 148 180) 96% );
+  background-color: #ffb48f;
 }
 
 .reviews-title {
   margin: 0px;
   padding: 20px;
   text-align: center;
+  font-size: 50px;
+  color: #0c578e;
+  padding: 30px;
 }
 
 .reviews-container {
+  padding: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -22,5 +25,10 @@
 }
 
 .review-title {
+  margin: 0px;
+  padding: 20px;
   text-align: center;
+  font-size: 40px;
+  color: #0c578e;
+  padding-bottom: 2px;
 }
