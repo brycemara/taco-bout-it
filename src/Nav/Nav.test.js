@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { Router, MemoryRouter } from 'react-router-dom'
+import { MemoryRouter } from 'react-router-dom'
 import Nav from './Nav';
 
 describe("App", () => {
@@ -10,7 +10,7 @@ describe("App", () => {
         <Nav />
       </MemoryRouter>
     )
-    const homeButton = screen.getByText("Home")
+    const homeButton = screen.getByAltText("home-icon")
 
     expect(homeButton).toBeInTheDocument()
   })

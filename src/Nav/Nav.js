@@ -10,7 +10,7 @@ function Nav() {
     </Link>
     <Link to="/" className="home">
       <button className="nav-button">
-        <img src={taco} />
+        <img src={taco} alt="home-icon"/>
       </button>
     </Link>
     <Link to="/reviews" className="reviews">
