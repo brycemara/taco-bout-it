@@ -13,8 +13,8 @@ describe("HomePage", () => {
         <HomePage />
       </MemoryRouter>
     )
-    const homeTitle = screen.getByText("Random Taco of the Day!")
-    const viewRecipeButton = screen.getByText("View Recipe")
+    const homeTitle = screen.getByText("Check out our taco of the day!")
+    const viewRecipeButton = screen.getByText("RECIPE")
     
     expect(homeTitle).toBeInTheDocument()
     expect(viewRecipeButton).toBeInTheDocument()

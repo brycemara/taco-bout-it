@@ -24,16 +24,17 @@ const expectedReturn =
 }
 
 
-describe("Recipe", () => {
+describe.only("Recipe", () => {
 
   it("should render correctly", () => {
     fetchTaco.mockResolvedValue(expectedReturn)
+    
     render(
       <MemoryRouter>
         <Recipe />
       </MemoryRouter>
     )
-    const title = screen.getByText("RANDOM TACO RECIPE");
+    const title = screen.getByText("TACO OF THE DAY");
 
     expect(title).toBeInTheDocument()
   })

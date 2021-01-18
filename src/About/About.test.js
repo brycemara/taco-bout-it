@@ -9,7 +9,7 @@ describe("About", () => {
         <About />
       </MemoryRouter>
     );
-    const title = screen.getByText("About Us");
+    const title = screen.getByText("About Taquero Mucho");
 
     expect(title).toBeInTheDocument();
   });

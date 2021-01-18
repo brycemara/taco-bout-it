@@ -33,7 +33,7 @@ describe("App Rendering", () => {
         <App />
       </MemoryRouter>
     );
-    const navBar = screen.getByText("Home");
+    const navBar = screen.getByText("ABOUT");
 
     expect(navBar).toBeInTheDocument();
   });
@@ -44,7 +44,7 @@ describe("App Rendering", () => {
         <App />
       </MemoryRouter>
     );
-    const homePage = screen.getByText("Random Taco of the Day!");
+    const homePage = screen.getByText("TACQUERO MUCHO");
 
     expect(homePage).toBeInTheDocument();
   })
@@ -59,8 +59,8 @@ describe("Routes", () => {
         <App />
       </Router>
     );
-    const homePageTitle = screen.getByText("Random Taco of the Day!");
-    const viewRecipeButton = screen.getByText("View Recipe");
+    const homePageTitle = screen.getByText("TACQUERO MUCHO");
+    const viewRecipeButton = screen.getByText("RECIPE");
 
     expect(homePageTitle).toBeInTheDocument();
     expect(viewRecipeButton).toBeInTheDocument();
@@ -95,7 +95,7 @@ describe("Routes", () => {
         <App />
       </Router>
     );
-    const aboutTitle = screen.getByText("About Us");
+    const aboutTitle = screen.getByText("About Taquero Mucho");
     const locations = screen.getByText("Come Visit Us!");
 
     expect(aboutTitle).toBeInTheDocument();
@@ -141,12 +141,12 @@ describe("View Recipe interaction", () => {
         <App />
       </MemoryRouter>
     );
-    const viewRecipeButton = screen.getByText("View Recipe");
+    const viewRecipeButton = screen.getByText("RECIPE");
 
     userEvent.click(viewRecipeButton);
 
     const recipeView = await waitFor(() =>
-      screen.getByText("RANDOM TACO RECIPE")
+      screen.getByText("TACO OF THE DAY")
     );
     const seasoning = await waitFor(() =>
       screen.getByText("Seasoning: Sriracha Marinade")
@@ -164,7 +164,7 @@ describe("Review Form interaction", () => {
         <App />
       </MemoryRouter>
     );
-    userEvent.click(screen.getByText("Reviews"));
+    userEvent.click(screen.getByText("REVIEWS"));
 
     const reviewsHeader = await waitFor(() =>
       screen.getByText("Customer Reviews")
@@ -191,7 +191,7 @@ describe("Review Form interaction", () => {
         <App />
       </MemoryRouter>
     );
-    userEvent.click(screen.getByText("Reviews"));
+    userEvent.click(screen.getByText("REVIEWS"));
 
     const reviewsHeader = await waitFor(() =>
       screen.getByText("Customer Reviews")
@@ -214,7 +214,7 @@ describe("Review Form interaction", () => {
         <App />
       </MemoryRouter>
     );
-    userEvent.click(screen.getByText("Reviews"));
+    userEvent.click(screen.getByText("REVIEWS"));
 
     const reviewsHeader = await waitFor(() =>
       screen.getByText("Customer Reviews")
@@ -239,7 +239,7 @@ describe("Review Form interaction", () => {
         <App />
       </MemoryRouter>
     );
-    userEvent.click(screen.getByText("Reviews"));
+    userEvent.click(screen.getByText("REVIEWS"));
 
     const reviewsHeader = await waitFor(() =>
       screen.getByText("Customer Reviews")

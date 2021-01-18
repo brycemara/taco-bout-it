@@ -4,7 +4,7 @@
 ### Overview
 An app for the Tacquero Mucho food truck for Austin locals who enjoy their tacos. Tacquero Mucho serves a random taco each day as their taco of the day. The random taco comes from the [this API](https://github.com/evz/tacofancy-api).
 
-[Check out the taco of the day here on the live site!]()
+[Check out the taco of the day here on the live site!](https://brycemara.github.io/taco-bout-it/)
 
 ### Set up
 - Clone the repository down and cd into the repo on your local machine.
