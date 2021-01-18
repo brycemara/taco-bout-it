@@ -1,17 +1,20 @@
 import { Link } from 'react-router-dom'
 import './Nav.css'
+import taco from '../assets/tacos.png'
 
 function Nav() {
   return(
     <section className="nav">
-    <Link to="/about" className="about-us">
-      <button>About</button>
+    <Link to="/about" className="about">
+      <button className="nav-button">ABOUT</button>
     </Link>
     <Link to="/" className="home">
-      <button>Home</button>
+      <button className="nav-button">
+        <img src={taco} />
+      </button>
     </Link>
     <Link to="/reviews" className="reviews">
-      <button>Reviews</button>
+      <button className="nav-button">REVIEWS</button>
     </Link>
     </section>
   )

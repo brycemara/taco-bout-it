@@ -2,18 +2,34 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid white;
   padding: 30px;
+  background-color: #3feee6;
 }
 
-button {
+.nav-button {
+  text-align: center;
   display: block;
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 90px;
+  border-style: none;
   border-radius: 50%;
+  border: 1px solid white;
+  background-color: #f4de80;
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, 0.2)
 }
 
-.about-us  {
+.nav-button:hover {
+  cursor: pointer;
+  background-color: #f7ce17;
+}
+
+.nav-button.focus, .nav-button:focus {
+  outline: 0;
+  box-shadow: none!important;
+}
+
+.about  {
   text-decoration: none;
 }
  .reviews {

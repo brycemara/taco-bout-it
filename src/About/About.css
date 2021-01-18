@@ -1,15 +1,39 @@
 .about-us {
   text-align: center;
+  background-color: #ffb48f;
 }
+
+.truck-image {
+  box-shadow: 3px 3px 1px 1px rgb(0 0 0 / 47%);
+}
+
+.about-title {
+  margin: 0px;
+  font-size: 50px;
+  color: #0c578e;
+  padding: 30px;
+} 
 
 .about-paragraph {
   margin: 50px;
+  padding: 20px;
+  color: #0c578e;
+  background-color: #ffffffbf;
+  box-shadow: 3px 3px 1px 1px rgb(3 3 4 / 53%);
 }
 
 .schedule {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 40px;
+}
+
+.time {
+  color: #0c578e;
+  background-color: #ffffffbf;
+  padding: 10px;
+  box-shadow: 3px 3px 1px 1px rgb(3 3 4 / 53%);
 }
 
 .find-us {
