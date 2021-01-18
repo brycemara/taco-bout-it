@@ -24,38 +24,38 @@ function Recipe() {
 
   return (
     <section className="recipe">
-      <img className="landing-img" src={cook} />
+      <img className="landing-img" src={cook} alt="Ingredients Image"/>
       <h1 className="title">RANDOM TACO RECIPE</h1>
       {seasoning === null && <h2>...Loading...</h2>}
       {condiment !== null && (
         <section className="recipe-details">
           <div className="seasoning">
             <h2>Seasoning: {seasoning.name} </h2>
-            <a target="_blank" className="link" href={seasoning.url}>
+            <a target="_blank" rel="noreferrer" className="link" href={seasoning.url}>
               Recipe details
             </a>
           </div>
           <div className="shell">
             <h2>Shell: {shell.name} </h2>
-            <a target="_blank" className="link" href={shell.url}>
+            <a target="_blank" rel="noreferrer" className="link" href={shell.url}>
               Recipe details
             </a>
           </div>
           <div className="baseLayer">
             <h2>Base Layer: {baseLayer.name} </h2>
-            <a target="_blank" className="link" href={baseLayer.url}>
+            <a target="_blank" rel="noreferrer" className="link" href={baseLayer.url}>
               Recipe details
             </a>
           </div>
           <div className="mixin">
             <h2>Mixin: {mixin.name} </h2>
-            <a target="_blank" className="link" href={mixin.url}>
+            <a target="_blank" rel="noreferrer" className="link" href={mixin.url}>
               Recipe details
             </a>
           </div>
           <div className="condiment">
             <h2>Condiment: {condiment.name} </h2>
-            <a target="_blank" className="link" href={condiment.url}>
+            <a target="_blank" rel="noreferrer" className="link" href={condiment.url}>
               Recipe details
             </a>
           </div>
