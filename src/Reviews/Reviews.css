@@ -3,7 +3,7 @@
     circle, rgb(4 212 246 / 25%) 0%, rgb(9 148 180) 96% );
 }
 
-h1 {
+.reviews-title {
   margin: 0px;
   padding: 20px;
   text-align: center;

@@ -5,7 +5,7 @@ import taco from '../assets/tacos.png'
 function Nav() {
   return(
     <section className="nav">
-    <Link to="/about" className="about-us">
+    <Link to="/about" className="about">
       <button className="nav-button">ABOUT</button>
     </Link>
     <Link to="/" className="home">
