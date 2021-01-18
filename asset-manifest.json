@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/taco-bout-it/static/css/main.7963c413.chunk.css",
+    "main.js": "/taco-bout-it/static/js/main.b8810941.chunk.js",
+    "main.js.map": "/taco-bout-it/static/js/main.b8810941.chunk.js.map",
+    "runtime-main.js": "/taco-bout-it/static/js/runtime-main.7bfeb0ef.js",
+    "runtime-main.js.map": "/taco-bout-it/static/js/runtime-main.7bfeb0ef.js.map",
+    "static/js/2.8b4d1dee.chunk.js": "/taco-bout-it/static/js/2.8b4d1dee.chunk.js",
+    "static/js/2.8b4d1dee.chunk.js.map": "/taco-bout-it/static/js/2.8b4d1dee.chunk.js.map",
+    "static/js/3.c6cbcb3e.chunk.js": "/taco-bout-it/static/js/3.c6cbcb3e.chunk.js",
+    "static/js/3.c6cbcb3e.chunk.js.map": "/taco-bout-it/static/js/3.c6cbcb3e.chunk.js.map",
+    "index.html": "/taco-bout-it/index.html",
+    "static/css/main.7963c413.chunk.css.map": "/taco-bout-it/static/css/main.7963c413.chunk.css.map",
+    "static/js/2.8b4d1dee.chunk.js.LICENSE.txt": "/taco-bout-it/static/js/2.8b4d1dee.chunk.js.LICENSE.txt",
+    "static/media/austin.30357a7d.png": "/taco-bout-it/static/media/austin.30357a7d.png",
+    "static/media/cook.0534d4bf.png": "/taco-bout-it/static/media/cook.0534d4bf.png",
+    "static/media/leta-taco.e4157d3f.jpg": "/taco-bout-it/static/media/leta-taco.e4157d3f.jpg",
+    "static/media/shawn-taco.6afe82d3.jpg": "/taco-bout-it/static/media/shawn-taco.6afe82d3.jpg",
+    "static/media/HomePage.css": "/taco-bout-it/static/media/taco-of-the-day.ab85141a.png",
+    "static/media/will-taco.42bce9ef.jpg": "/taco-bout-it/static/media/will-taco.42bce9ef.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7bfeb0ef.js",
+    "static/js/2.8b4d1dee.chunk.js",
+    "static/css/main.7963c413.chunk.css",
+    "static/js/main.b8810941.chunk.js"
+  ]
+}
