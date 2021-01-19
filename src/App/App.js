@@ -12,10 +12,10 @@ function App() {
       <Nav />
       <main>
         <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/reviews" component={Reviews} />
-          <Route path="/recipe" component={Recipe} />
-          <Route exact path="/" component={HomePage} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/reviews" component={Reviews} />
+          <Route exact path="/recipe" component={Recipe} />
+          <Route exact path="/taco-bout-it" component={HomePage} />
           <Route render={() => <h1>Page does not exist</h1>} />
         </Switch>
       </main>
