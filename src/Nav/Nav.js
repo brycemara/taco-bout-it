@@ -8,7 +8,7 @@ function Nav() {
     <Link to="/about" className="about">
       <button className="nav-button">ABOUT</button>
     </Link>
-    <Link to="/" className="home">
+    <Link to="/taco-bout-it" className="home">
       <button className="nav-button">
         <img src={taco} alt="home-icon"/>
       </button>
