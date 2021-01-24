@@ -44,16 +44,22 @@ describe("App Rendering", () => {
         <App />
       </MemoryRouter>
     );
+    const homeButton = screen.getByAltText("home-icon")
+
+    userEvent.click(homeButton);
+    
     const homePage = screen.getByText("TACQUERO MUCHO");
 
     expect(homePage).toBeInTheDocument();
   })
 });
 
+
+
 describe("Routes", () => {
   it("should route to homepage", () => {
     const history = createMemoryHistory();
-    history.push("/");
+    history.push("/taco-bout-it");
     render(
       <Router history={history}>
         <App />
@@ -141,6 +147,10 @@ describe("View Recipe interaction", () => {
         <App />
       </MemoryRouter>
     );
+    const homeButton = screen.getByAltText("home-icon")
+
+    userEvent.click(homeButton);
+
     const viewRecipeButton = screen.getByText("RECIPE");
 
     userEvent.click(viewRecipeButton);
